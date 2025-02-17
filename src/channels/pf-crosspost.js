@@ -14,8 +14,8 @@ export default {
         channel.send({
           content: [
             message.content?.length ? `${message.content}\n` : "",
-            message.attachments?.map?.(a => a.url)?.join?.("\n") ?? "",
-            `\n-# [Forwarded from Polyfield server](https://discord.com/channels/${message.channel.id}/${message.id})`
+            message.attachments?.size ? message.attachments?.map?.(a => a.url)?.join?.("\n")+"\n" : "",
+            "\n-# Forwarded from Polyfield server"
           ].join(""),
           embeds: message.embeds,
           allowedMentions: { parse: [] }
