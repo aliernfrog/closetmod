@@ -38,6 +38,11 @@ export default {
             name: "user",
             description: "The user who reached the milestone, leave empty to reset.",
             type: ApplicationCommandOptionType.User
+          },
+          {
+            name: "additional-users",
+            description: "IDs of the additional users who reached the milestone splitted with a comma, leave empty to reset.",
+            type: ApplicationCommandOptionType.String
           }
         ]
       },

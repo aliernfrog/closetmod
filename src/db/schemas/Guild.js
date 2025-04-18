@@ -17,7 +17,8 @@ export default mongoose.model(name, new mongoose.Schema({
       of: {
         userId: String,
         channelId: String,
-        messageId: String
+        messageId: String,
+        additionalUsers: Array
       }
     },
     users: {
