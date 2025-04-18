@@ -9,7 +9,7 @@ export default {
 
     milestones.forEach((value, key) => {
       const messageLink = `https://discord.com/channels/${interaction.guild.id}/${value.channelId}/${value.messageId}`;
-      const mentions = [ value.user ].concat(value.additionalUsers ?? []).map(id => `<@${id}>`);
+      const mentions = [ value.userId ].concat(value.additionalUsers ?? []).map(id => `<@${id}>`);
       embedData.push(`**• [${key}](${messageLink})** - ${mentions.join(" & ")}`);
     });
     if (!milestones.size) embedData.push("No milestones reached.");
