@@ -30,5 +30,14 @@ export default [
       const c3 = ["multiple","two","three"].some(w => args.includes(w));
       return c1 && c2 && c3;
     }
+  },
+  {
+    name: "Invisible map",
+    thread: "https://discord.com/channels/752538330528481351/1373160944917807114/1373177059807072266",
+    filter(_, args) {
+      return args.includes("void")
+        || (args.includes("invisible") && args.includes("map"))
+        || (args.includes("bug") && args.includes("spawn"));
+    }
   }
 ];
