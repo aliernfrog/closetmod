@@ -11,5 +11,8 @@
     "discord.js": "^14.19.3",
     "dotenv": "^16.5.0",
     "mongoose": "^8.15.1"
+  },
+  "overrides": {
+    "undici": "6.21.3"
   }
 }
