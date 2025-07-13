@@ -25,7 +25,7 @@ export async function handleMessage(client, message) {
   if (sticky.timeout) clearTimeout(sticky.timeout);
   sticky.timeout = setTimeout(
     () => sendStickyMessage(client, message, sticky, stickyIndex),
-    sticky.interval ?? 60*1000
+    sticky.interval ?? 7*60*1000
   );
   messages[stickyIndex] = sticky;
 }
