@@ -8,11 +8,8 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "discord.js": "^14.19.3",
-    "dotenv": "^16.5.0",
-    "mongoose": "^8.15.1"
-  },
-  "overrides": {
-    "undici": "6.21.3"
+    "discord.js": "^14.23.2",
+    "dotenv": "^17.2.3",
+    "mongoose": "^8.19.1"
   }
 }
