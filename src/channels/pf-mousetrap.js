@@ -5,7 +5,9 @@ export default {
     
     const reason = "Softban triggered by message in mouse trap";
     
-    await message.delete();
+    try {
+      await message.delete();
+    } catch {}
     
     await message.member.ban({
       deleteMessageSeconds: 120,
