@@ -10,7 +10,7 @@ export default {
     } catch {}
     
     await message.member.ban({
-      deleteMessageSeconds: 120,
+      deleteMessageSeconds: 600,
       reason: reason
     });
     
