@@ -1,5 +1,5 @@
 export default {
-  name: "ready",
+  name: "clientReady",
   once: true,
   async execute(client) {
     console.log(`${client.user.tag} | ${client.guilds.cache.size} guilds`);
