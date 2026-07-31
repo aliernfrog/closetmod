@@ -70,7 +70,7 @@ const utils = {
       if (forum.init) toInit.push(forum.init);
       client.specialForums.set(forum.id, forum);
     }
-    if (toInit.length) client.once("ready", async (cl) => {
+    if (toInit.length) client.once("clientReady", async (cl) => {
       for (const execute of toInit) {
         try {
           await execute(cl);
