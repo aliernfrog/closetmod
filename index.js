@@ -10,7 +10,11 @@ import * as ModLogUtil from "./src/utils/ModLogUtil.js";
 import * as db from "./src/db/db.js";
 
 const client = new Client({
-  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]
+  intents: [
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.MessageContent
+  ]
 });
 
 client.rest.on("rateLimited", (data) => {
